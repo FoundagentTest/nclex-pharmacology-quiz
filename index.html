@@ -406,10 +406,24 @@ const LETTERS = ["A", "B", "C", "D"];
 const quizEl = document.getElementById("quiz");
 let answered = 0, correct = 0;
 
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 QUESTIONS.forEach((q, qi) => {
   const card = document.createElement("section");
   card.className = "q";
   card.id = "q" + qi;
+
+  // Shuffle display order so the correct answer is not always in the same slot.
+  const order = shuffle(q.options.map((_, i) => i));
+  const correctPos = order.indexOf(q.answer);
+  card._correctPos = correctPos;
 
   const tag = document.createElement("span");
   tag.className = "tag";
@@ -423,12 +437,12 @@ QUESTIONS.forEach((q, qi) => {
 
   const ul = document.createElement("ul");
   ul.className = "opts";
-  q.options.forEach((opt, oi) => {
+  order.forEach((origIdx, pos) => {
     const li = document.createElement("li");
     const btn = document.createElement("button");
     btn.type = "button";
-    btn.innerHTML = '<span class="letter">' + LETTERS[oi] + '</span><span>' + opt + '</span>';
-    btn.addEventListener("click", () => choose(qi, oi, card));
+    btn.innerHTML = '<span class="letter">' + LETTERS[pos] + '</span><span>' + q.options[origIdx] + '</span>';
+    btn.addEventListener("click", () => choose(qi, pos, card));
     li.appendChild(btn);
     ul.appendChild(li);
   });
@@ -436,27 +450,27 @@ QUESTIONS.forEach((q, qi) => {
 
   const rat = document.createElement("div");
   rat.className = "rationale";
-  rat.innerHTML = "<b>Answer: " + LETTERS[q.answer] + ".</b> " + q.rationale;
+  rat.innerHTML = "<b>Answer: " + LETTERS[correctPos] + ".</b> " + q.rationale;
   card.appendChild(rat);
 
   quizEl.appendChild(card);
 });
 
-function choose(qi, oi, card) {
+function choose(qi, pos, card) {
   if (card.dataset.done) return;
   card.dataset.done = "1";
-  const q = QUESTIONS[qi];
+  const correctPos = card._correctPos;
   const btns = card.querySelectorAll(".opts button");
   btns.forEach((b, bi) => {
     b.disabled = true;
-    if (bi === q.answer) {
+    if (bi === correctPos) {
       b.classList.add("correct");
       const m = document.createElement("span");
       m.className = "mark g";
       m.textContent = "✓";
       b.appendChild(m);
     }
-    if (bi === oi && oi !== q.answer) {
+    if (bi === pos && pos !== correctPos) {
       b.classList.add("wrong");
       const m = document.createElement("span");
       m.className = "mark b";
@@ -467,7 +481,7 @@ function choose(qi, oi, card) {
   card.querySelector(".rationale").classList.add("show");
 
   answered++;
-  if (oi === q.answer) correct++;
+  if (pos === correctPos) correct++;
   updateProgress();
   if (answered === QUESTIONS.length) showResult();
 }
