@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free NCLEX Pharmacology Quiz: 15 High-Yield Practice Questions</title>
+<meta name="description" content="A free NCLEX-RN pharmacology practice quiz. 15 high-yield questions on antidotes, high-alert drugs, and priority nursing actions, each with a full rationale. No sign-up, works on your phone.">
+<link rel="canonical" href="https://foundagenttest.github.io/nclex-pharmacology-quiz/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="High-Yield Nursing Review">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free NCLEX Pharmacology Quiz: 15 High-Yield Practice Questions">
+<meta property="og:description" content="15 high-yield NCLEX-RN pharmacology questions with full rationales. Free, no sign-up, mobile-friendly self-check on antidotes, high-alert drugs, and priority nursing actions.">
+<meta property="og:url" content="https://foundagenttest.github.io/nclex-pharmacology-quiz/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free NCLEX Pharmacology Quiz: 15 High-Yield Practice Questions">
+<meta name="twitter:description" content="15 high-yield NCLEX-RN pharmacology questions with full rationales. Free, no sign-up.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://nclexpharm.foundagent.net/#org",
+      "name": "High-Yield Nursing Review",
+      "url": "https://nclexpharm.foundagent.net/",
+      "description": "Free NCLEX-RN pharmacology study resources for nursing students in their final cram weeks."
+    },
+    {
+      "@type": "LearningResource",
+      "name": "Free NCLEX Pharmacology Quiz: 15 High-Yield Practice Questions",
+      "url": "https://foundagenttest.github.io/nclex-pharmacology-quiz/",
+      "learningResourceType": "Quiz",
+      "educationalLevel": "Nursing school / NCLEX-RN candidates",
+      "teaches": "NCLEX pharmacology: antidotes and reversal agents, high-alert medications, and priority nursing actions.",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "author": { "@id": "https://nclexpharm.foundagent.net/#org" },
+      "publisher": { "@id": "https://nclexpharm.foundagent.net/#org" }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --ink: #14232b;
+    --muted: #5a6b73;
+    --bg: #f6f4ee;
+    --card: #ffffff;
+    --line: #e2ded3;
+    --teal: #0f5c5a;
+    --teal-dark: #0a3f3e;
+    --good: #1c7a4a;
+    --good-bg: #e9f6ee;
+    --bad: #b23a34;
+    --bad-bg: #fbecea;
+    --accent: #c1613a;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 72px; }
+  h1, h2, h3 { font-family: "Fraunces", Georgia, "Times New Roman", serif; line-height: 1.15; color: var(--teal-dark); font-weight: 600; }
+  a { color: var(--teal); }
+  a:hover { color: var(--teal-dark); }
+
+  header.site { padding: 28px 0 10px; }
+  .kicker { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin: 0 0 6px; }
+  header.site h1 { font-size: 34px; margin: 0 0 12px; }
+  .lede { font-size: 18px; color: var(--muted); margin: 0 0 8px; }
+  .lede a { font-weight: 600; }
+
+  .meta-bar { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 14px; color: var(--muted); margin: 14px 0 4px; }
+  .meta-bar span { display: inline-flex; align-items: center; gap: 6px; }
+
+  .note { background: #fffaf0; border: 1px solid #efe3c4; border-radius: 10px; padding: 12px 16px; font-size: 14.5px; color: #6a5a33; margin: 20px 0 4px; }
+
+  .progress { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 12px 0 10px; margin-top: 14px; border-bottom: 1px solid var(--line); }
+  .progress .row { display: flex; justify-content: space-between; align-items: baseline; font-size: 14px; color: var(--muted); }
+  .progress .score { font-weight: 600; color: var(--teal-dark); }
+  .track { height: 6px; background: var(--line); border-radius: 4px; margin-top: 8px; overflow: hidden; }
+  .track > i { display: block; height: 100%; width: 0; background: var(--teal); transition: width .3s ease; }
+
+  .q {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 20px 8px;
+    margin: 22px 0;
+    box-shadow: 0 1px 2px rgba(20,35,43,.04);
+  }
+  .q .tag { display: inline-block; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+  .q .num { color: var(--muted); font-weight: 600; }
+  .q .stem { font-size: 17.5px; font-weight: 500; margin: 0 0 16px; }
+  .opts { list-style: none; margin: 0; padding: 0; }
+  .opts li { margin: 0 0 10px; }
+  .opts button {
+    width: 100%; text-align: left; cursor: pointer;
+    background: #fbfaf6; border: 1.5px solid var(--line); border-radius: 10px;
+    padding: 13px 15px; font: inherit; color: var(--ink);
+    display: flex; gap: 12px; align-items: flex-start;
+    transition: border-color .15s, background .15s;
+  }
+  .opts button:hover:not(:disabled) { border-color: var(--teal); }
+  .opts button:disabled { cursor: default; }
+  .opts .letter { font-weight: 700; color: var(--muted); flex: 0 0 auto; }
+  .opts button.correct { background: var(--good-bg); border-color: var(--good); }
+  .opts button.correct .letter { color: var(--good); }
+  .opts button.wrong { background: var(--bad-bg); border-color: var(--bad); }
+  .opts button.wrong .letter { color: var(--bad); }
+  .mark { margin-left: auto; font-weight: 700; }
+  .mark.g { color: var(--good); }
+  .mark.b { color: var(--bad); }
+
+  .rationale { display: none; margin: 4px 0 14px; padding: 14px 16px; border-left: 3px solid var(--teal); background: #f2f7f6; border-radius: 0 8px 8px 0; font-size: 15.5px; }
+  .rationale.show { display: block; }
+  .rationale b { color: var(--teal-dark); }
+
+  .result { display: none; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin: 26px 0; text-align: center; }
+  .result.show { display: block; }
+  .result .big { font-family: "Fraunces", Georgia, serif; font-size: 44px; color: var(--teal-dark); margin: 4px 0; }
+  .result p { color: var(--muted); margin: 6px 0 0; }
+  .btn { display: inline-block; background: var(--teal); color: #fff; text-decoration: none; padding: 12px 20px; border-radius: 10px; font-weight: 600; margin-top: 16px; }
+  .btn:hover { background: var(--teal-dark); color: #fff; }
+  .btn.ghost { background: transparent; color: var(--teal); border: 1.5px solid var(--teal); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+  .next-steps { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; margin: 30px 0; }
+  .next-steps h2 { font-size: 22px; margin: 0 0 10px; }
+  .next-steps ul { margin: 10px 0 0; padding-left: 20px; }
+  .next-steps li { margin: 8px 0; }
+
+  footer { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+  footer h3 { font-size: 15px; margin: 0 0 6px; color: var(--ink); font-family: inherit; }
+  footer p { margin: 0 0 12px; }
+  .disclaimer { font-size: 13px; }
+
+  @media (max-width: 520px) {
+    header.site h1 { font-size: 28px; }
+    .result .big { font-size: 36px; }
+    body { font-size: 16px; }
+  }
+
+  @media print {
+    .progress, .btn, .opts button { border-color: #ccc; }
+    .rationale { display: block; }
+    body { background: #fff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <p class="kicker">Pharm Made Manageable</p>
+    <h1>Free NCLEX Pharmacology Practice Quiz</h1>
+    <p class="lede">Fifteen high-yield questions to check what you actually know before test day. Every question has a full rationale, so a wrong answer teaches you something. Free, no sign-up, works on your phone.</p>
+    <div class="meta-bar">
+      <span>15 questions</span>
+      <span>Antidotes &middot; high-alert drugs &middot; priority actions</span>
+      <span>Rationale on every answer</span>
+    </div>
+    <div class="note">
+      Made by the nursing-review team behind <a href="https://nclexpharm.foundagent.net/">Pharm Made Manageable</a>, a free NCLEX pharmacology study site. These questions are written to mirror how the NCLEX tests medications: the chart hands you a finding, and you pick the safe nursing action. Answer each one, then read the rationale.
+    </div>
+  </header>
+
+  <div class="progress">
+    <div class="row">
+      <span id="p-count">Question 1 of 15</span>
+      <span class="score" id="p-score">Score: 0 / 0</span>
+    </div>
+    <div class="track"><i id="p-bar"></i></div>
+  </div>
+
+  <main id="quiz"></main>
+
+  <section class="result" id="result">
+    <p class="kicker">Your result</p>
+    <div class="big" id="r-score">0 / 15</div>
+    <p id="r-msg"></p>
+    <div class="cta-row" style="margin-top:18px">
+      <a class="btn ghost" href="#" onclick="location.reload();return false;">Retake the quiz</a>
+      <a class="btn" href="https://nclexpharm.foundagent.net/">Get the free study guide</a>
+    </div>
+  </section>
+
+  <section class="next-steps">
+    <h2>Where to go next</h2>
+    <p>This quiz is a check, not a course. If a question caught you out, that class is worth a real review. Everything below is free to read.</p>
+    <ul>
+      <li><a href="https://nclexpharm.foundagent.net/">Pharm Made Manageable</a>: the free study site. Start here for the framework that makes 54 drug classes learnable in your final weeks.</li>
+      <li><a href="https://nclexpharm.foundagent.net/how-the-nclex-tests-pharmacology">How the NCLEX tests pharmacology</a>: the four recurring question angles, so you can predict what the chart is really asking.</li>
+      <li><a href="https://nclexpharm.foundagent.net/pharmacology-suffixes-cheat-sheet">Drug-suffix cheat sheet</a>: read the ending (-olol, -pril, -statin), know the class, and answer drugs you have never seen.</li>
+      <li><a href="https://nclexpharm.foundagent.net/nclex-pharmacology-cheat-sheet">Antidotes and lab-values cheat sheet</a>: the must-know reversal agents, therapeutic levels, and hold parameters on one page.</li>
+    </ul>
+    <p style="margin-top:14px">Want the whole method in one place? The full guide, <em>NCLEX-RN Pharmacology Made Manageable</em> (PDF and EPUB), is <a href="https://nclexpharm.foundagent.net/#book">available for $12.99</a>. The site above is free either way.</p>
+  </section>
+
+  <footer>
+    <h3>Who made this</h3>
+    <p>Written by High-Yield Nursing Review, the team behind the free study site <a href="https://nclexpharm.foundagent.net/">Pharm Made Manageable</a> and the guide <em>NCLEX-RN Pharmacology Made Manageable</em>. We built this quiz as a free resource; the links above are our own site and book, and we are telling you that plainly.</p>
+    <h3 style="margin-top:16px">A note on safety</h3>
+    <p class="disclaimer">This is study material for the NCLEX, not medical advice and not a substitute for clinical judgment. Drug facts, lab ranges, and reversal agents follow commonly taught NCLEX references and can vary by source; your facility's own policies and current drug references govern real patient care. NCLEX-RN is a registered trademark of the National Council of State Boards of Nursing, which does not endorse and is not affiliated with this resource.</p>
+  </footer>
+
+</div>
+
+<script>
+const QUESTIONS = [
+  {
+    tag: "Cardiac glycosides",
+    stem: "A client takes digoxin for heart failure. The nurse finds an apical pulse of 52 and the client says they are seeing yellow halos around lights. What is the priority action?",
+    options: [
+      "Hold the dose and notify the provider",
+      "Give the dose, then recheck the pulse in an hour",
+      "Give a potassium-rich snack, then give the dose",
+      "Give an extra dose to slow the heart rate"
+    ],
+    answer: 0,
+    rationale: "A slow apical pulse (under 60) plus visual changes like yellow-green halos are classic signs of digoxin toxicity. Hold the drug, notify the provider, and anticipate the antidote, digoxin immune Fab (DigiFab). Low potassium makes digoxin toxicity worse, not better."
+  },
+  {
+    tag: "Diuretics",
+    stem: "A client on furosemide and digoxin has a serum potassium of 2.9 mEq/L. Which action matters most?",
+    options: [
+      "Hold the digoxin and notify the provider",
+      "Give both drugs and recheck potassium next week",
+      "Restrict the client's fluids",
+      "Give an extra dose of furosemide"
+    ],
+    answer: 0,
+    rationale: "Loop diuretics waste potassium, and low potassium sharply raises the risk of digoxin toxicity. Hold the digoxin, report the low potassium, and expect potassium replacement. This pairing (a diuretic plus digoxin) is a favorite NCLEX trap."
+  },
+  {
+    tag: "Anticoagulants",
+    stem: "A client on IV heparin has a platelet count that fell from 250,000 to 90,000 over several days. What should the nurse suspect and do?",
+    options: [
+      "Suspect heparin-induced thrombocytopenia; stop the heparin and notify the provider",
+      "Continue the heparin, since this drop is expected",
+      "Give protamine and keep the heparin running",
+      "Give a platelet transfusion and continue the heparin"
+    ],
+    answer: 0,
+    rationale: "A large platelet drop several days into heparin points to heparin-induced thrombocytopenia (HIT). Stop the heparin and notify the provider. Monitoring aPTT and platelets is part of heparin care; protamine is the reversal agent for bleeding, not the answer to HIT."
+  },
+  {
+    tag: "Anticoagulants",
+    stem: "A client on warfarin has an INR of 5.5 and bleeding gums. Along with holding the drug and notifying the provider, which antidote should the nurse anticipate?",
+    options: [
+      "Vitamin K (phytonadione)",
+      "Protamine sulfate",
+      "Naloxone",
+      "Flumazenil"
+    ],
+    answer: 0,
+    rationale: "Warfarin is monitored with the INR and reversed with vitamin K; serious bleeding may also need prothrombin complex concentrate or fresh frozen plasma. Protamine reverses heparin, naloxone reverses opioids, and flumazenil reverses benzodiazepines."
+  },
+  {
+    tag: "Insulin",
+    stem: "A client just received rapid-acting insulin, and the breakfast tray is delayed. What is the safest nursing action?",
+    options: [
+      "Make sure food reaches the client quickly, or hold the client until food is available",
+      "Give a little more insulin to cover the wait",
+      "Have the client walk the hallway to use up the sugar",
+      "Do nothing, since a short delay does not matter"
+    ],
+    answer: 0,
+    rationale: "Rapid-acting insulin works fast, and a delayed meal risks hypoglycemia, which is most likely at the insulin's peak. Get food to the client; never give more insulin. If a conscious client goes low, treat with the Rule of 15 (15 g of fast carbohydrate, recheck in 15 minutes)."
+  },
+  {
+    tag: "Antidiabetics",
+    stem: "A client who takes metformin is scheduled for a CT scan with IV contrast dye. What does the nurse expect?",
+    options: [
+      "Metformin will be held around the time of the contrast",
+      "The metformin dose will be doubled before the scan",
+      "No change is needed for the scan",
+      "Insulin will replace the metformin for good"
+    ],
+    answer: 0,
+    rationale: "Metformin is held around iodinated contrast because of the risk of contrast-related kidney injury and lactic acidosis. It is restarted once kidney function is confirmed to be stable."
+  },
+  {
+    tag: "Respiratory inhalers",
+    stem: "A client having a sudden asthma attack reaches for a salmeterol inhaler. What should the nurse do?",
+    options: [
+      "Stop and teach: salmeterol is a long-acting controller, and a rescue attack needs a short-acting inhaler like albuterol",
+      "Encourage the salmeterol, because it works within seconds",
+      "Have the client take a double dose of salmeterol",
+      "Tell the client to hold their breath and wait it out"
+    ],
+    answer: 0,
+    rationale: "Salmeterol is a long-acting beta-2 agonist (a LABA) for daily control, not for a sudden attack. Rescue needs a short-acting agent (a SABA) such as albuterol. Reaching for a LABA to stop an active attack is a teaching red flag."
+  },
+  {
+    tag: "Statins",
+    stem: "A client on simvastatin reports new aching in both thighs and cola-colored urine. What is the priority?",
+    options: [
+      "Hold the statin and notify the provider, since this can signal rhabdomyolysis",
+      "Reassure the client that muscle aches from statins are harmless",
+      "Increase the statin dose to control cholesterol faster",
+      "Encourage the client to exercise through the soreness"
+    ],
+    answer: 0,
+    rationale: "Muscle pain with dark, cola-colored urine suggests rhabdomyolysis, a serious statin adverse effect that can injure the kidneys. Hold the drug and report it; expect a creatine kinase (CK) level to be checked."
+  },
+  {
+    tag: "Vancomycin",
+    stem: "Partway into a rapid IV vancomycin infusion, a client develops flushing and redness of the face and neck. What is the nurse's first action?",
+    options: [
+      "Slow the infusion rate",
+      "Stop the drug for good and chart it as a true allergy",
+      "Speed the infusion up to finish sooner",
+      "Give the next dose early to push through it"
+    ],
+    answer: 0,
+    rationale: "Flushing during a fast vancomycin infusion is an infusion-rate reaction (often called vancomycin flushing or red man syndrome), not a true allergy. Slowing the rate usually settles it, and premedication may help future doses."
+  },
+  {
+    tag: "Mood stabilizers",
+    stem: "A client on lithium develops vomiting and diarrhea, and is now confused with a coarse hand tremor. What should the nurse suspect?",
+    options: [
+      "Lithium toxicity from fluid loss and dehydration",
+      "A normal, expected lithium side effect",
+      "An allergic reaction to lithium",
+      "That the lithium dose is too low"
+    ],
+    answer: 0,
+    rationale: "Lithium has a narrow therapeutic range, and dehydration or low sodium drives the level up quickly. Confusion and a coarse tremor signal toxicity. Hold the drug, check a lithium level, and support hydration."
+  },
+  {
+    tag: "Antidepressants",
+    stem: "A client on an SSRI starts taking a triptan for migraines and is now febrile, tremulous, and agitated. What is the likely problem?",
+    options: [
+      "Serotonin syndrome",
+      "A simple panic attack",
+      "Insulin shock",
+      "An expected benefit of the SSRI"
+    ],
+    answer: 0,
+    rationale: "Stacking serotonergic drugs (an SSRI plus a triptan, tramadol, or an MAOI) can trigger serotonin syndrome: fever, tremor, agitation, and autonomic changes. Stop the offending drugs and get help."
+  },
+  {
+    tag: "Non-opioid analgesics",
+    stem: "A parent is about to give aspirin to a child who has the flu. What should the nurse teach?",
+    options: [
+      "Do not give aspirin to a child with a viral illness; use acetaminophen instead, because of the risk of Reye's syndrome",
+      "Aspirin is the best fever reducer for a child",
+      "Give half of an adult aspirin to be safe",
+      "Alternate aspirin and ibuprofen every hour"
+    ],
+    answer: 0,
+    rationale: "Aspirin given to a child with a viral illness is linked to Reye's syndrome, which injures the liver and brain. Acetaminophen is the safer choice for a child's fever."
+  },
+  {
+    tag: "IV potassium safety",
+    stem: "An order reads: give 10 mEq of potassium chloride IV push. What should the nurse do?",
+    options: [
+      "Question the order, because IV potassium is never given by push and must be diluted and infused slowly on a pump",
+      "Give it quickly to correct the level fast",
+      "Give it by push, but only into a large vein",
+      "Give it by push after diluting it in 5 mL"
+    ],
+    answer: 0,
+    rationale: "Concentrated IV potassium is a high-alert drug, and a direct IV push can be fatal. It must be diluted and infused slowly with a pump. Questioning an unsafe order is the correct nursing action."
+  },
+  {
+    tag: "Opioids",
+    stem: "A post-op client who received morphine has a respiratory rate of 8 and is very drowsy. What is the correct priority sequence?",
+    options: [
+      "Hold the opioid, stimulate the client and support breathing, give naloxone, then watch for re-sedation",
+      "Give another dose of morphine for comfort",
+      "Let the client sleep it off and recheck in an hour",
+      "Give flumazenil to reverse the morphine"
+    ],
+    answer: 0,
+    rationale: "A low respiratory rate with heavy sedation after an opioid is respiratory depression. Hold the drug, stimulate the client, support the airway and oxygen, and give naloxone. Naloxone is short-acting, so keep watching for re-sedation. Flumazenil reverses benzodiazepines, not opioids."
+  },
+  {
+    tag: "Bisphosphonates",
+    stem: "A client is starting alendronate for osteoporosis. Which instruction is essential?",
+    options: [
+      "Take it with a full glass of water first thing in the morning and stay upright for at least 30 minutes",
+      "Take it at bedtime with a snack",
+      "Lie down after taking it to help it absorb",
+      "Take it with an antacid to protect the stomach"
+    ],
+    answer: 0,
+    rationale: "Bisphosphonates like alendronate can burn the esophagus. Take with plain water on an empty stomach and stay sitting or standing for at least 30 minutes; do not lie down. Food and antacids block absorption."
+  }
+];
+
+const LETTERS = ["A", "B", "C", "D"];
+const quizEl = document.getElementById("quiz");
+let answered = 0, correct = 0;
+
+QUESTIONS.forEach((q, qi) => {
+  const card = document.createElement("section");
+  card.className = "q";
+  card.id = "q" + qi;
+
+  const tag = document.createElement("span");
+  tag.className = "tag";
+  tag.textContent = q.tag;
+  card.appendChild(tag);
+
+  const stem = document.createElement("p");
+  stem.className = "stem";
+  stem.innerHTML = '<span class="num">Q' + (qi + 1) + '.</span> ' + q.stem;
+  card.appendChild(stem);
+
+  const ul = document.createElement("ul");
+  ul.className = "opts";
+  q.options.forEach((opt, oi) => {
+    const li = document.createElement("li");
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.innerHTML = '<span class="letter">' + LETTERS[oi] + '</span><span>' + opt + '</span>';
+    btn.addEventListener("click", () => choose(qi, oi, card));
+    li.appendChild(btn);
+    ul.appendChild(li);
+  });
+  card.appendChild(ul);
+
+  const rat = document.createElement("div");
+  rat.className = "rationale";
+  rat.innerHTML = "<b>Answer: " + LETTERS[q.answer] + ".</b> " + q.rationale;
+  card.appendChild(rat);
+
+  quizEl.appendChild(card);
+});
+
+function choose(qi, oi, card) {
+  if (card.dataset.done) return;
+  card.dataset.done = "1";
+  const q = QUESTIONS[qi];
+  const btns = card.querySelectorAll(".opts button");
+  btns.forEach((b, bi) => {
+    b.disabled = true;
+    if (bi === q.answer) {
+      b.classList.add("correct");
+      const m = document.createElement("span");
+      m.className = "mark g";
+      m.textContent = "✓";
+      b.appendChild(m);
+    }
+    if (bi === oi && oi !== q.answer) {
+      b.classList.add("wrong");
+      const m = document.createElement("span");
+      m.className = "mark b";
+      m.textContent = "✗";
+      b.appendChild(m);
+    }
+  });
+  card.querySelector(".rationale").classList.add("show");
+
+  answered++;
+  if (oi === q.answer) correct++;
+  updateProgress();
+  if (answered === QUESTIONS.length) showResult();
+}
+
+function updateProgress() {
+  const n = QUESTIONS.length;
+  const shown = Math.min(answered + 1, n);
+  document.getElementById("p-count").textContent = "Question " + shown + " of " + n;
+  document.getElementById("p-score").textContent = "Score: " + correct + " / " + answered;
+  document.getElementById("p-bar").style.width = (answered / n * 100) + "%";
+}
+
+function showResult() {
+  const n = QUESTIONS.length;
+  const res = document.getElementById("result");
+  document.getElementById("r-score").textContent = correct + " / " + n;
+  let msg;
+  if (correct === n) msg = "A clean sweep. Your priority-action instincts are sharp. Keep them warm with a quick daily review.";
+  else if (correct >= 12) msg = "Strong work. A few classes slipped; reread the rationales you missed and you have got this.";
+  else if (correct >= 8) msg = "A solid base with real gaps. Use the rationales above, then work the drug classes you missed on the free study site below.";
+  else msg = "This is exactly what a practice quiz is for: it found the gaps early. Read every rationale, then rebuild these classes from the free study site below. You have time.";
+  document.getElementById("r-msg").textContent = msg;
+  res.classList.add("show");
+  res.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+</script>
+</body>
+</html>
