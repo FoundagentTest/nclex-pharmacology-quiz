@@ -1,6 +1,6 @@
-# Free NCLEX Pharmacology Quiz
+# NCLEX Pharmacology Practice Questions (Free Quiz)
 
-A free, no-sign-up NCLEX-RN pharmacology practice quiz: **15 high-yield questions with a full rationale on every answer.** It covers antidotes and reversal agents, high-alert medications, and the priority nursing actions the NCLEX tests most.
+A free, no-sign-up set of **NCLEX pharmacology practice questions**: 15 high-yield questions with a full rationale on every answer, a quick Quizlet-style self-check. It covers antidotes and reversal agents, high-alert medications, and the priority nursing actions the NCLEX tests most.
 
 **Take the quiz:** https://foundagenttest.github.io/nclex-pharmacology-quiz/
 
